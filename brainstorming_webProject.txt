@@ -1,0 +1,39 @@
+brainstorm web project (04/03/2022) - Group 11 Helio&João
+
+
+main ideas:
+
+- travel organizer [Winner idea]
+
+- plataforma de boleias (ride sharing) [Loser idea]
+
+
+::::::::TRAVEL ORGANIZER::::::::
+
+first details:
+
+		- searching for live flight prices (Skyscanner API).
+		- plan whole trips:
+					- schedual everything with access to google callendar (callendar API);
+					- manage trip budget and export info to spredsheet (Excel services Rest API);
+					- ect;
+		- organize trips by folders (business trips, personal vacations, family trips, etc).
+		- rent cars (Skyscanner's Car Hire API).
+		- create groups with other users to plan group trips.
+		- create user friendly pdfs with all travel info and send it to everyone interested.
+		- upload receipts for all travel expenses for later consultation.
+		- review past trips and all its aspects.
+		- live information of choosen flight (FlightRadar API).
+
+name ideas:
+
+		- TravelOrg
+		- TPlan
+		- Voyage (from French)
+		- VoyageOrg
+		- VoyagePlan
+		- Viatge (from Latin) [Winner name]
+
+
+
+
