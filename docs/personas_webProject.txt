@@ -1,11 +1,11 @@
 brainstorming web project (06/03/2022) - Grupo 11 Helio&João
 
 
-description of personas:
+description::
 
 - 4 characters
 
-- brief live description
+- brief description of their lifes
 
 - what do they do in their life that makes them need the platform (Viatge)
 
