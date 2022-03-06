@@ -1,0 +1,62 @@
+brainstorming web project (06/03/2022) - Grupo 11 Helio&João
+
+
+description of personas:
+
+- 4 characters
+
+- brief live description
+
+- what do they do in their life that makes them need the platform (Viatge)
+
+
+persona #1
+
+.Nuno
+.50 years old
+.lives in Spain and has an architecture and construction company.
+.do to the aspect of his business being international, Nuno travels a lot every year,
+and since his kids live abroad he also travels regulary to see them.
+.with all of these travels, it becomes hard for Nuno to keep track of everything so he always has to spend a lot of
+money on assistants to help him out.
+.but since now Nuno uses Viatge to organize his trips and keep track of all of his expenses, he doesn't need to hire
+assistants anymore and can share his travel plans with his kids so they can always know when he will visit next.
+
+persona #2
+
+.Katarina
+.20 years old
+.lives in Denmark and just started university.
+.since she was young Katarina has loved traveling and is always looking forward to her next trip. but all of her trips
+come with the stress of planning them attached, and since she mostly travels alone, Katarina has to plan everything.
+Its always hard to keep track of the best flight prices and the best places to book her stay, but on her last 2 trips
+she took advantage of the tools we have at Viatge to organize herself and all the stress dissapeared. 
+.So from them on Katarina will always look to Viatge to help her out.
+
+persona #3
+
+.Michael 
+.35 years old
+.lives in the USA and works has a graphic designer.
+.Michael works as a freelancer so he enjoys spending his freedom by traveling the world and working from his laptop.
+One recent hobbie Michael took on his video blogging his trips and posting them on his website so other people can 
+use his notes to better travel themselves.
+Since he usually bolgs after he returns home from a trip he needs a way to review all his steps and remmember the best
+momments. With the use of our platform Viatge, he can do just that with a just a few clicks. Michael has all of his
+trips organized by season of the year and goes back on his reccords to write out the perfect blog post, including all
+of his spending and places visited.
+
+persona #4
+
+.Anah
+.45 years old
+.lives in Bucarest and works as a manager in a clothing store.
+.Anah doesn't travel a lot but once every two months she goes visit her son that lives abroad.
+Since Anah loves to be organized and always have reccords of everything she does, her son propused that she started 
+using Viatge to plan her trips and share the details with him with ease.
+Anah loves the platform, as it provides her with just the perfect amount of tools and organization methods and when 
+she tells her friends about her latest trips, she uses the maps on the platform to show the places she visited.
+
+
+
+
