@@ -1,5 +1,4 @@
 # Viatge
-<br></br>
 Projeto realizado por João Miguel Pires, nº20200459 e Hélio Divaldo, nº20190928
 <br></br>
 IADE, Faculdade de Design, Tecnologia e Comunicação
