@@ -1,0 +1,39 @@
+brainstorm web project (07/03/2022) - Group 11 Helio&João
+
+
+bullet points:
+
+		- review of work done;
+		- review of proto-personas and what needs to be added;
+		- review of what needs to be delivered in the first sprint;
+		- planning the week and distribution of work;
+		- deadline setting for weekly goals.
+
+weekly goals/deadlines:
+
+		- target-audience (João) /08.03.22
+		- competition and comparison (Helio) /08.03.22
+		- proto-personas (João) base version and biography /09.03.22
+		- ux journeys (João) base version /09.03.22
+		- moodboards (João) base version /08.03.22
+		- pre-existing tools (Helio) /08.03.22
+		- initial description and basic outline /08.03.22
+		- use cases to present on 1st delivery /09.03.22
+		- powerpoint (pitch presentation) (Helio) base version /09.03.22
+
+other goals:
+		- for the 8th of March the analysis of the research documents must be finished and important points to use
+		  in the 1st pitch must be outlined.
+	
+		- for the 8th of March as well, the draft of a possible questionare must be done and discused as a group as
+		  to what use it might have.
+
+		- for the 9th of March the pinpoint of all external services (APIs) to be used should be done and proper 
+		  justification as to why they need to be implemented in the project must come along.
+
+		- set up a sharepoint for the IU document to be submited next sunday.
+
+		- add the possible function "points of interest" to the list.
+
+
+
