@@ -1,0 +1,22 @@
+powerpoint presentation briefing (09/03/22)
+
+slide 1 - cover
+
+		Helio - group and project name introduction;
+
+slide 2 - Problem vs Solution
+
+		Helio - problem description;
+		João - Solution introduction.
+
+slide 3 - Mission declaration
+
+		João - first 2 points;
+		Helio - last 2 points.
+
+slide 4 - Functionalities
+
+		João - first 3 points;
+		Helio - last 3 points.
+
+slide 5 - fin
