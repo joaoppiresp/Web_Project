@@ -1,0 +1,15 @@
+brainstorm web project (10/03/2022) - Group 11 Helio&João
+
+
+geographic elements to implement:
+
+		- flight information live on map (to decide if possible);
+
+		- routes between points of interest;
+
+		- airport locations worldwide (markers);
+
+		- if public, points visited in trips by friends.
+
+
+		
