@@ -1,0 +1,24 @@
+concorrentes e ferramentas semelhantes
+
+TRIPADVISOR
+
++ Permite ver tanto as críticas quanto as fotografias postadas pelos turistas.
++ Permite reservar e alugar hotéis, voos e restaurantes diretamente no site.
++ Permite que os gestores respondam a qualquer tipo de revisão.
+
+- Comentários falsos, que a equipa do TripAdvisor tenta remover mas muitas das vezes sem sucesso.
+
+WANDERLOG
+
++ Os utilizadores podem ver tanto o mapa como as suas listas completamente numa única exibição em vez de ir revertendo entre visualizações.
+
++ Os recursos de planeamento de viagem disponíveis na web, estão disponiveis na aplicação mobile para facilidade de uso quando em movimento.
+
+TRIPIT
+
++ Organize informações sobre viagens.
++ Excelente interface de usuário.
++ Lembretes oportunos.
+
+- Não existe opção para partilhar itinerários com utilizadores não TripIt.
+- Não existe opção para verificar alertas sobre mudanças de voo
