@@ -9,3 +9,6 @@ Cenário Alternativo| 1.1. As credenciais do utilizador não se encontram regist
 Pós Condições|  - O utilizador tenta os passos novamente;|
 Cenários Exceção|  - O utilizador sai da plataforma a qualquer momento|
 Pós Condições|  - N\A|
+
+#### Use Case 2 - search/select flights
+----------------------------------------------
