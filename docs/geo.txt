@@ -1,0 +1,8 @@
+serviço de conversão de moradas a coordenadas
+
+NOMINATIM
+
+geocodificação
+
+
+rotas - OSRM ou MapBox
