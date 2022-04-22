@@ -15,7 +15,7 @@
     <entity-ids>
       <counter>
         <item-type type-id="group" type="Group" />
-        <value>484</value>
+        <value>486</value>
       </counter>
       <counter>
         <item-type type-id="erd-entity" type="Entity" />
@@ -37,7 +37,18 @@
   </counters>
   <alias-groups />
   <management uid="md-af4d5f73a3694a99b4819d2b6cd58a98" name="" task-id-sequence="0">
+    <working-schedule uid="ws-a2f17ba5c0be45f69f0c5b07b3592cac" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
     <persons>
+      <person id="">
+        <first-name>pablo</first-name>
+        <last-name>prescott</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-6d02f0c9274841f08bb0dfcf5ea44393" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
       <person id="">
         <first-name>pablo</first-name>
         <last-name>prescott</last-name>
