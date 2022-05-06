@@ -5,12 +5,6 @@ CREATE TABLE roles(
                     PRIMARY KEY (role_id)
 );
 
-CREATE TABLE paymentMethods(
-                    method_type TEXT NOT NULL,
-                    method_id INTEGER NOT NULL,
-                    PRIMARY KEY (method_id)
-);
-
 CREATE TABLE transpType(
                     transp_type TEXT NOT NULL,
                     transp_id INTEGER NOT NULL,
@@ -27,6 +21,12 @@ CREATE TABLE users(
                     PRIMARY KEY (user_id)
 );
 
+CREATE TABLE friends(
+                    friendship BOOLEAN,
+                    sender_id INTEGER,
+                    receiver_id INTEGER
+);
+
 CREATE TABLE destinations(
                     destination_id SERIAL UNIQUE NOT NULL,
                     destination_name TEXT NOT NULL,
@@ -35,25 +35,23 @@ CREATE TABLE destinations(
 
 );
 
+CREATE TABLE trip(
+                    trip_id SERIAL UNIQUE NOT NULL,
+                    transp_fk INTEGER,
+                    destin_fk INTEGER,
+                    PRIMARY KEY (trip_id)
+);
+
 CREATE TABLE travelPlans(
                     travelPlan_id SERIAL UNIQUE NOT NULL,
                     user_fk INTEGER NOT NULL,                                 --integer to identify user (FK)
                     plan_name VARCHAR(40) NOT NULL,
-                    destination_fk INTEGER,                                   --integer to identify the destination (FK)
+                    trip_fk INTEGER,                                   --integer to identify the destination (FK)
                     return_date FLOAT,
-                    flight_number_fk VARCHAR(7),
-                    transportation_fk INTEGER,
                     place_fk INTEGER,
+                    friend_fk INTEGER,
+                    visit_fk INTEGER,
                     PRIMARY KEY (travelPlan_id)
-);
-
-CREATE TABLE flights(
-                    flight_number VARCHAR(7) NOT NULL,
-                    origin TEXT NOT NULL,
-                    destination TEXT NOT NULL,
-                    departure_date FLOAT NOT NULL,
-                    flight_duration FLOAT NOT NULL,
-                    PRIMARY KEY (flight_number)
 );
 
 CREATE TABLE transportations(
@@ -68,13 +66,20 @@ CREATE TABLE transportations(
 CREATE TABLE places(
                     place_id SERIAL UNIQUE NOT NULL,
                     place_name TEXT NOT NULL,
-                    place_address GEOMETRY,
-                    arriving_date FLOAT,
+                    place_geo GEOMETRY,
                     schedual VARCHAR(400),
                     payment BOOLEAN,
                     oficial_page_url VARCHAR(200),
                     PRIMARY KEY (place_id)
 );
+
+CREATE TABLE visit(
+                    visit_id INTEGER,
+                    place_fk INTEGER,
+                    visit_date FLOAT,
+                    PRIMARY KEY (visit_id)
+);
+
 
 CREATE TABLE budgets(
                     travelPlan_fk INTEGER,
@@ -82,7 +87,7 @@ CREATE TABLE budgets(
                     payment_fk BOOLEAN,
                     xpns_date FLOAT,
                     xpns_value VARCHAR(7),
-                    method_fk INTEGER,
+                    method CHAR,
                     total_fk INTEGER
 );
 
@@ -105,23 +110,18 @@ FOREIGN KEY (user_fk) REFERENCES users(user_id)
 ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 ALTER TABLE TravelPlans
-add CONSTRAINT travelPlans_fk_destinations
-FOREIGN KEY (destination_fk) REFERENCES destinations(destination_id)
-ON DELETE NO ACTION ON UPDATE NO ACTION;
-
-ALTER TABLE TravelPlans
-add CONSTRAINT travelPlans_fk_flights
-FOREIGN KEY (flight_number_fk) REFERENCES flights(flight_number)
-ON DELETE NO ACTION ON UPDATE NO ACTION;
-
-ALTER TABLE TravelPlans
-add CONSTRAINT travelPlans_fk_transportations
-FOREIGN KEY (transportation_fk) REFERENCES transportations(transportation_id)
+add CONSTRAINT travelPlans_fk_trip
+FOREIGN KEY (trip_fk) REFERENCES trip(trip_id)
 ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 ALTER TABLE TravelPlans
 add CONSTRAINT travelPlans_fk_places
 FOREIGN KEY (place_fk) REFERENCES places(place_id)
+ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE TravelPlans
+add CONSTRAINT travelPlans_fk_visit
+FOREIGN KEY (visit_fk) REFERENCES visit(visit_id)
 ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --transportaions contraints
@@ -136,17 +136,24 @@ add CONSTRAINT budgets_fk_travelPlans
 FOREIGN KEY (travelPlan_fk) REFERENCES travelPlans(travelPlan_id)
 ON DELETE NO ACTION ON UPDATE NO ACTION;
 
---ALTER TABLE budgets
---add CONSTRAINT budgets_fk_places
---FOREIGN KEY (payment_fk) REFERENCES places(payment)
---ON DELETE NO ACTION ON UPDATE NO ACTION;
-
-ALTER TABLE budgets
-add CONSTRAINT budgets_fk_paymentMethods
-FOREIGN KEY (method_fk) REFERENCES paymentMethods(method_id)
-ON DELETE NO ACTION ON UPDATE NO ACTION;
-
 ALTER TABLE budgets
 add CONSTRAINT budgets_fk_budgetTotal
 FOREIGN KEY (total_fk) REFERENCES budgetTotal(total_id)
+ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--visit constraints
+ALTER TABLE visit
+add CONSTRAINT visit_fk_places
+FOREIGN KEY (place_fk) REFERENCES places(place_id)
+ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--trip constraints
+ALTER TABLE trip
+add CONSTRAINT trip_fk_transportations
+FOREIGN KEY (transp_fk) REFERENCES transportations(transportation_id)
+ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE trip
+add CONSTRAINT trip_fk_destinations
+FOREIGN KEY (destin_fk) REFERENCES destinations(destination_id)
 ON DELETE NO ACTION ON UPDATE NO ACTION;
